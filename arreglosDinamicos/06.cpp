@@ -2,6 +2,13 @@
 #include <vector>
 using namespace std;
 
+    /*
+    * Uso del iterator para recorrer un vector  
+    
+    
+    
+    */
+
 int main(){
     vector <int> edades;
     edades.push_back(23);

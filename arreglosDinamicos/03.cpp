@@ -3,8 +3,6 @@ using namespace std;
 
 /*
     03. Procedimiento para eliminar una posicion del arreglo
-
-
 */
 
 int* pow_back(int*arreglo, int& tam);

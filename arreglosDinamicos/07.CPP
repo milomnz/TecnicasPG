@@ -2,6 +2,11 @@
 #include <vector> 
 using namespace std;
 
+    /*
+    USO DE ITERATOR PARA RECORRER UN VECTOR
+    Uso y aplicacion del for each...
+    
+    */
 int main(){
     vector <int> edades;
     for (int i=0;i<5;i++){

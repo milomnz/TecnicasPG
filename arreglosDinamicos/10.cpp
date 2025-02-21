@@ -2,29 +2,26 @@
 #include <vector>
 using namespace std;
 
-int main(){
-    vector <int> numeros;
-    int posicion , valor, opcion;
-    while (int i=1){
-        try{
-            cout << "Bienvenido. Pulse 1. Para agregar un valor, 2. Para salir";
-            cin >> opcion;
-            if (opcion = 1){
-                cout << "Ingrese un valor: ";
-                cin >> valor;
-                cout << "Ingrese la posicion";
-                cin >> posicion;
-                if (posicion < numeros.size()+1){
-                    numeros.insert(numeros.begin()+posicion,valor);
-                }else{
-                    cout << "Posicion no valida, Numero no insertado";
-                    continue;
-                }
-            }else if(opcion == 2){
-                i++;
+int main() {
+    vector<int> numeros;
+    int posicion, valor;
+    char opcion;
+    
+    do {
+        cout << "Ingrese una posicion y valor: ";
+        cin >> posicion;
+        cin >> valor;
+        if (posicion > numeros.size()) {
+            cout << "Posicion invalida" << endl;
+        } else {
+            numeros.insert(numeros.begin() + posicion, valor);
+            for (int i : numeros) {
+                cout << i << " ";
             }
-        }catch(exception){
-            cout << ("Opcion no valida");
-        }
-    }
+
+            cout << "Desea salir S O N: "; 
+            cin >> opcion;
+        } 
+    } while (opcion != 'S' && opcion != 's');
+
 }
