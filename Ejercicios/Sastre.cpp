@@ -1,8 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include <iomanip>
-
 using namespace std;
 
 struct Trabajo{
@@ -19,7 +17,6 @@ int main(){
                                 {2, 1, 4000}, 
                                 {3, 2, 2}, 
                                 {4, 5, 5}};
-    int n = trabajos.size();
     vector<int> mejorOrden;
     int menorRecargoTotal = INT_MAX;  
 
