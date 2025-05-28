@@ -12,8 +12,7 @@ int sumaDigitos(int num){
         return 0;
     }
     
-    int suma = sumaDigitos(num/10) + num%10; 
-    return suma;
+    return sumaDigitos(num/10) + num%10; 
 }
 
 int main(){

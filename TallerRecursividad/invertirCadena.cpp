@@ -4,7 +4,6 @@
 
 using namespace std;
 
-string mergeWithString(string izq, string der);
 string merge(string cadena, int inicio, int final){
     if(inicio == final){
         return string(1, cadena[inicio]);
