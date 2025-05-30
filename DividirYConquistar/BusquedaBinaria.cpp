@@ -91,4 +91,16 @@ int main()
         cout << "El valor " << IndiceABuscar << " no se encuentra en el arreglo." << endl;
 
     return 0;
+
+    int coseno_angulo = 1;
+    int color = 1;
+    int distancia = 3;
+
+
+    // Esto es MUY común en shaders:
+    float brillo = pow(coseno_angulo, 128);  // Especular highlight
+    float gamma = pow(color, 2.2);          // Corrección de color
+    float atenuacion = pow(distancia, -2);  // Luz que se desvanece
+
+
 }
